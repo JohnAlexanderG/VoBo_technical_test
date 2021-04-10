@@ -1,0 +1,43 @@
+.section-8 {
+    height: calc(100vh - 120px);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width:1366px) {
+        height: 60vh;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    p {
+        @media screen and (min-width:1366px) {
+            margin: 2rem 0;
+            width: 600px;
+        }
+    }
+
+    input, textarea {
+        width: 80%;
+        line-height: 2rem;
+        padding: 0 0.5rem;
+        margin-bottom: 1rem;
+        @media screen and (min-width:1366px) {
+            margin-bottom: 2rem;
+        }
+    }
+    
+    textarea {
+        height: 100px;
+
+    }
+
+}

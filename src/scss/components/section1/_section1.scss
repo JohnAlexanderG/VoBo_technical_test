@@ -1,0 +1,56 @@
+.section-1 {
+    background-image: url('../img/Women/img1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: calc(100vh - 100px);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width:1366px) {
+        margin-top: 0;
+        padding-top: 0;
+        background-image: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        div {
+            padding-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            width: 600px;
+
+            h1 {
+                margin: 1rem 0;
+                font-size: 5rem;
+                color: $secundary_color;
+            }
+            
+            p {
+                line-height: 1.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    
+    &__image {
+        display: none;
+        @media screen and (min-width:1366px) {
+            display: flex;
+        }
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+}

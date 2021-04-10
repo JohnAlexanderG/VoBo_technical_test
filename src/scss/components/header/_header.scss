@@ -1,0 +1,102 @@
+header {
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 2px 10px 2px rgba($gray1, 0.8);
+    z-index: 300;
+    @media screen and (min-width:1366px) {
+        margin: 1rem 0;
+        height: 100px;
+        box-shadow: none;
+        position: relative;
+        justify-content: space-around;
+    }
+}
+
+.header__image-menu {
+    position: absolute;
+    width: 25px;
+    margin-left: 1rem;
+    @media screen and (min-width:1366px) {
+        display: none;
+    }
+}
+
+.header__image-logo {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    @media screen and (min-width:1366px) {
+        width: 100px;
+        display: inline;
+        margin: 0;
+        // ...
+    }
+}
+
+.header__menu-ppal {
+    display: none;
+
+    background-color: rgba($primary_color, 0.95);
+    position: absolute;
+    
+    width: 100vw;
+    height: calc(100vh - 60px);
+
+    top: 60px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    color: darken($secundary_color, 15);
+
+    @media screen and (min-width:1366px) {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: stretch;
+        position: relative;
+        height: auto;
+        width: 700px;
+        top: 0px;
+    }
+
+    &--active {
+        display: flex;
+    }
+
+    li {
+        font-size: 2rem;
+        font-weight: 100;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        @media screen and (min-width:1366px) {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        &:hover, &:active {
+            text-decoration: none;
+            background-image: url('../img/Floral/floral12.svg');
+            background-repeat: no-repeat;
+            color: darken($primary_color, 25);
+            @media screen and (min-width:1366px) {
+                color: darken($secundary_color, 25);
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.section-4 {
+    position: relative;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media screen and (min-width:1366px) {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+    }
+
+    &::before {
+        position: absolute;
+        content: url('../img/Floral/floral6.svg');
+        width: 70px;
+        top: -2px;
+        left: -1px;
+        @media screen and (min-width:1366px) {
+            width: 120px;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: url('../img/Floral/floral7.svg');
+        width: 50px;
+        bottom: -3px;
+        left: 0px;
+        @media screen and (min-width:1366px) {
+            width: 100px;
+        }
+    }
+    div {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @media screen and (min-width:1366px) {
+            height: 100%;
+            text-align: left;
+            h2 {
+                font-size: 4rem;
+                margin: 0;
+            }
+            p {
+                line-height: 1.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+        background-image: url('../img/Floral/floral9.svg'), url('../img/Floral/floral10.svg'), url('../img/Floral/floral11.svg');
+        background-size: 120px,100px,102px;
+        background-repeat: no-repeat;
+        background-position-y: 30px,40px,169px;
+        background-position-x: 0,220px,217px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @media screen and (min-width:1366px) {
+            height: 100%;
+            background-size: 250px,148px,192px;
+            background-repeat: no-repeat;
+            background-position-y: 80px,99px,454px;
+            background-position-x: 0,590px,548px;
+        }
+        &::before {
+            position: absolute;
+            content: url('../img/Floral/floral8.svg');
+            height: 100px;
+            width: 70px;
+            bottom: 5px;
+            left: 20px;
+            right: 0;
+            @media screen and (min-width:1366px) {
+                width: 150px;
+                bottom: 115px;
+            }
+        }
+        &::after {
+            position: absolute;
+            content: url('../img/Floral/floral12.svg');
+            width: 50px;
+            bottom: 36px;
+            right: 25px;
+            @media screen and (min-width:1366px) {
+                width: 125px;
+                bottom: 115px;
+            }
+        }
+        img {
+            margin: 0 auto;
+            display: block;
+            width: 245px;
+            @media screen and (min-width:1366px) {
+                width: 80%;
+            }
+        }
+    }
+}

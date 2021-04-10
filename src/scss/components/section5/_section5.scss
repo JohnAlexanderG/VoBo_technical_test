@@ -1,0 +1,49 @@
+.section-5 {
+    position: relative;
+    background-color: $gray2;
+    height: 50vh;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width:1366px) {
+        align-items: flex-end;
+        height: 65vh;
+        background-image: url('../img/Women/img4.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        div {
+            position: relative;
+            padding: 2rem;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+
+            h2 {
+                font-size: 4rem;
+            }
+
+            &::before {
+                position: absolute;
+                content: url('../img/Floral/floral13.svg');
+                width: 300px;
+                top: 20%;
+                left: 0px;
+            }
+        }
+    }
+    &::before {
+        position: absolute;
+        content: url('../img/Floral/floral13.svg');
+        width: 180px;
+        top: 25%;
+        left: 0px;
+    }
+}

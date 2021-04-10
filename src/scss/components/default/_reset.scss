@@ -1,0 +1,26 @@
+body {
+    background-color: $white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    background-color: $primary_color;
+    border: none;
+    text-transform: uppercase;
+    line-height: 2rem;
+    padding: 0 1.25rem;
+    color: $secundary_color;
+    font-weight: 700;
+    @media screen and (min-width:1366px) {
+        line-height: 3rem;
+        padding: 0 2rem;
+    }
+}
+
+section {
+    height: calc(100vh);
+}
+
+p, h1, h2, h3 {
+    color: $titulo_color;
+}
