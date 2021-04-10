@@ -2,6 +2,8 @@
 Prueba técnica - Visto Bueno Marketing
 ***
 
+![Prueba técnica](./VoBo_technical_test.gif)
+
 ## Breakpoint Mobile
 ***
 ```
